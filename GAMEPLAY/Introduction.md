@@ -1,5 +1,4 @@
-原文链接：<https://docs.screeps.com/introduction.html>
-
+> 原文链接：<https://docs.screeps.com/introduction.html>
 > 原创翻译，未经允许禁止转载。
 
 # 介绍
