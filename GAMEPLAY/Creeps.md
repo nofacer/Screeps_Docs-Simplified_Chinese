@@ -5,7 +5,7 @@
 
 和其他RTS游戏一样，你的可控制单位被称为Creeps。但是Screeps炫酷的地方在于每一个Creep可以用7种可用的身体部位类型构造，每个单位上最多可以有50个部件。可以利用此机制构造出不同类型的Creeps：普通工人，能够在几个周期内建造或修复结构的巨型建筑机器，大容量运输单位，快速廉价的侦察兵，装备精良的具有再生能力的战斗机等。没有做不到，只有想不到。
 
-​​​![](https://docs.screeps.com/img/bodyparts.png)
+​​![](https://docs.screeps.com/img/bodyparts.png)
 
 不过要注意的是Creeps只有1500个游戏生命周期（大约30-60分钟，具体取决于每个游戏周期时间）， 然后它会死掉。 因此，你不仅需要控制现有的小兵，还需要设计Creeps的更替方式。
 
@@ -49,3 +49,4 @@ Spawn扩展的放置位置不重要，只需要和Spawn在一个房间里就行�
 
 每个creep可以承受的伤害总量由部件总数决定，每个部件可以增加100点耐久。被攻击时，排在前面的部件会被优先攻击，当部件完全损毁时，Creep就不再有对应能力了。
 
+![](<https://raw.githubusercontent.com/nofacer/pic_bed/master/my_blog/footer.jpg>)
