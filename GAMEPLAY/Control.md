@@ -54,3 +54,5 @@
 
 如果一个房间所需的RCL比你的高你可以通过[reserve](https://docs.screeps.com/api/#Creep.reserveController) 先预约。
 
+![](<https://raw.githubusercontent.com/nofacer/pic_bed/master/my_blog/footer.jpg>)
+
