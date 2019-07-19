@@ -1,20 +1,21 @@
-> 原文链接：<https://docs.screeps.com/respawn.html>
+> 原始文档：<https://docs.screeps.com/respawn.html>
 > 原创翻译，未经允许禁止转载。
 
-# Respawning
+# 重生
+在Screep的世界中，游戏永远不会结束，也没人敢保证自己一直是站在巅峰的那个。游戏的设计使得玩家可以获得持续的游戏体验，可以复仇，也可以换一种思路和玩法。
 
-In Screeps, the game is never over, and a global win of any player is hardly ever possible. The game is devised in such a way that you can always continue playing, gain revenge, change landscape, save your achievements, etc.
+## 初生
+游戏刚开始的界面是一个地图，你可以从图上的中立房间选一个至少有一个能量源的房间。不过最好选择有两个能量源的房间，并且位置相对安全，周围最好也是中立区的地方作为初始点。选好了后就把spawn放进去，起个好名字：
 
-## Initial spawn
-The game begins from your appearance on the map. You can choose any room with a neutral Controller and at least one energy source, although we recommend to choose a room with two sources and inside one of the Start Areas. So, after analyzing the landscape, place your spawn on the map:
 ![](https://docs.screeps.com/img/CreateSpawn.png)
-Now the room is in Safe mode during 20,000 game ticks (approx. 15 hours depending on the tick duration). Use this period to explore the room, develop, plan defenses, and prepare for capturing territory and resources.
 
-When the spawn is placed, it has 300 energy units first. For your safety, the spawn is constantly refilled with a small amount of 1 energy unit per tick, so that you won't stuck without energy.
+现在这个房间在20,000个游戏周期内都处于安全模式下(大约15小时)。好好利用这段时间来探索地图，发展，计划如何构建防御工事，占领其他领土和资源。
 
-> A spawn stops generating energy when there are 300 energy units in the spawn itself or any other spawns and extensions in the room.
+当spawn被放置的时候，会自带300点初始能量。并且为了防止玩家不小心把能量用光什么都干不了，spawn会在每个游戏周期恢复一点能量。
 
-## Respawn
+> 当spawn本身或者房间里其他的spawn及扩展达到了300点能量时，spawn就会停止自动生成能量。
+
+## 重生
 If you have chosen hastily and now want to move to a more interesting room, or if another player forced you to do so, you can restart the game with the help of the Respawn feature. It has a 180 seconds timeout. You will also need to respawn if your rooms are captured by an enemy and you don't have an extra foothold with creeps to build a spawn.
 ![](https://docs.screeps.com/img/Respawn.png)
 ![](https://docs.screeps.com/img/RespawnConfirm.png)
