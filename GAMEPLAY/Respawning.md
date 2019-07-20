@@ -4,7 +4,7 @@
 # 重生
 在Screep的世界中，游戏永远不会结束，也没人敢保证自己一直是站在巅峰的那个。游戏的设计使得玩家可以获得持续的游戏体验，可以复仇，也可以换一种思路和玩法。
 
-## 初生
+## 游戏初始
 游戏刚开始的界面是一个地图，你可以从图上的中立房间选一个至少有一个能量源的房间。不过最好选择有两个能量源的房间，并且位置相对安全，周围最好也是中立区的地方作为初始点。选好了后就把spawn放进去，起个好名字：
 
 ![](https://docs.screeps.com/img/CreateSpawn.png)
@@ -15,10 +15,12 @@
 
 > 当spawn本身或者房间里其他的spawn及扩展达到了300点能量时，spawn就会停止自动生成能量。
 
-## 重生
-If you have chosen hastily and now want to move to a more interesting room, or if another player forced you to do so, you can restart the game with the help of the Respawn feature. It has a 180 seconds timeout. You will also need to respawn if your rooms are captured by an enemy and you don't have an extra foothold with creeps to build a spawn.
+## 重新开始游戏
+如果你刚开始选择的房间比较随意，或者迫于其他玩家的压力(家被占了，没条件再造个spawn)，现在你想换个地方重新玩，你可以使用游戏的重生机制。重生有180s的冷却时间。
+
 ![](https://docs.screeps.com/img/Respawn.png)
 ![](https://docs.screeps.com/img/RespawnConfirm.png)
-As you have already known from the article Control, a player's Global Control Level (GCL) remains the same after the Respawn. So, if you have a right to claim 3 rooms, you will never lose it.
 
-Always try to control as many rooms as your GCL allows. It will allow your colony develop at the maximum speed. Even after a respawn from scratch, a high GCL will let you find a place with many free rooms and instantly claim some into your domain for parallel development.
+在之前关于Control的文章中我们介绍过，玩家在重生时GCL是会保留的。所以你仍然能开和重生之前一样的房数。
+
+在GCL允许的情况下，尽量多控制房间。因为这会帮你以最快的速度扩张。即使在重生后，一个高的GCL可以让你以多个房间开局并且可以并行发展。
