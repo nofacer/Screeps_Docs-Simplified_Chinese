@@ -24,3 +24,5 @@
 在之前关于Control的文章中我们介绍过，玩家在重生时GCL是会保留的。所以你仍然能开和重生之前一样的房数。
 
 在GCL允许的情况下，尽量多控制房间。因为这会帮你以最快的速度扩张。即使在重生后，一个高的GCL可以让你以多个房间开局并且可以并行发展。
+
+![](<https://raw.githubusercontent.com/nofacer/pic_bed/master/my_blog/footer.jpg>)
