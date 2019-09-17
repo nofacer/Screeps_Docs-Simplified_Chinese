@@ -39,3 +39,4 @@
 
 你可以使用游戏的环境变量`SYSTEM_USERNAME`、`SIGN_NOVICE_AREA`以及`SIGN_RESPAWN_AREA`来通过程序定期检查自己是否有重要的房间将被转化，如果有上图那样的消息你也可以通过程序来预定房间。
 
+![](<https://raw.githubusercontent.com/nofacer/pic_bed/master/my_blog/footer.jpg>)
