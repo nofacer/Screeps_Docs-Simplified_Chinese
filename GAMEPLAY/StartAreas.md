@@ -1,40 +1,43 @@
-title: Start Areas
----
+> 原始文档：https://docs.screeps.com/start-areas.html
+> 原创翻译，未经允许禁止转载。
 
-## Novice Areas
- 
-To allow each player start out in the game and develop a colony without facing veterans of the Screeps world, we’ve devised a system of special temporary sectors for novice players. They are marked in green, and the “**Novice Area**” label pops up as you hover the mouse pointer over them.
+#  初始区域
+
+## 新手区
+
+为了让新手获得良好的开局体验，不被老玩家虐菜，我们设计了一个系统用来标记出适合新玩家的区域。新手区被标记为绿色，当你鼠标移上去也会看到`Novice Area`的标记。
 
 ![](https://docs.screeps.com/img/novice.png)
 
-The following rules are in force in these rooms:
+在新手区有如下规则：
 
-*   The sector is completely separated from the outer world with a blind, indestructible wall preventing outside players from entering it. Getting inside a Novice Area is possible only by placing there your initial spawn directly.
-*   Only players with GCL 3 or lower is allowed to start playing in these rooms.
-*   Each player is allowed to [claim](/api/#Creep.claimController) not more than 3 rooms. But the room [reservation](/api/#Creep.reserveController) is unlimited.
+*   新手区与外面的世界是隔离开的，并且有道隐形的不可摧毁的墙阻止其他玩家进入。进入新手区的唯一方法是直接把你初始的spawn放置进去。
+*   只有GCL小于等于3的玩家可以从新手区开局。
+*   每个玩家[占领](https://docs.screeps.com/api/#Creep.claimController)的房间数量不能超过3个。但是[预定](https://docs.screeps.com/api/#Creep.reserveController)数量不受限制。
 *   No cooldown between [safe mode](/defense.html) activations.
-*   It’s prohibited to use [Nukers](/api/#StructureNuker). 
+*   激活[安全模式](https://docs.screeps.com/defense.html)没有冷却。
+*   禁止使用[核弹](https://docs.screeps.com/api/#StructureNuker)。
 
-Novice Areas have the day counter. After it runs out, the walls disappear, rooms lose the green mark, all the limitations are cancelled, and the sector becomes a regular part of the world. After zones are opened, residents can start outward expansion, but can also face invasion into their sectors. 
+新手区有倒计时，当其归于0则所有限制消失。那时候房间将不再呈现绿色，也没有空气墙了。你可以向外扩张，同时也得开始堤防外界的入侵。
 
-The majority of novice sectors are divided into 4x4 room size quarters. Apart from the common outer wall that encircles the entire 10x10 sector, there are also inside walls that intersect these “quarters.” The counters of those walls are lower than the total Novice Area counter. It means that each resident starts out in the game by facing other players only in his own “quarter” first, but after a few days he can meet all the residents of the sector. 
+地图上一个sector的大小为10x10，sector是宽度为1的外墙。除了这个外墙，sector内部还有一个十字形的内墙，将整个区域划分为四个相同的区块。内墙的消失时间比外墙快，这意味着一个sector内的玩家的活动范围是由小到大的。
 
-## Respawn Areas
+## 重生区域
 
-Another similar kind of isolated world map zones is **Respawn Areas**. They are highlighted with blue color and have only the Nukers usage restriction. All players with any GCL can place their first spawn in this area and claim as many rooms as their GCL allows.
+和新手区一样比较特别的区域是重生区域。在地图上蓝色的区域就是重生区域。不过重生区域只有使用核弹的限制，只要GCL等级匹配，任何玩家均可占领此区域。
 
 ![](https://docs.screeps.com/img/chrome_2017-03-06_14-40-11.png)
 
-## Areas generation in inner sectors
+## 区域生成方式
 
 We keep monitoring the Novice and Respawn Areas population progress and open new areas as it becomes necessary. Please mind that such areas can be allocated in previously opened sectors of the common world provided they are sufficiently big, not populated, and not in use by anyone. 
+我们会不断监视新手区和重生区域的分配情况，并根据需求开辟新的区域。请注意，即使是老的区域，只要没人使用，没有人口，足够大就会有可能会被重新分配。
 
-{% note info %}
-If you don’t want some rooms to get transformed into Novice or Respawn Areas, you should take care to [reserve](/api/#Creep.reserveController) them.
-{% endnote %}
+> 如果你不希望某个房间被转化为新手区或重生区，请记得[预定](https://docs.screeps.com/api/#Creep.reserveController)。
 
-When a Novice or Respawn Area is being planned in an inner sector, all free rooms in this sector will be signed by the game with the following message:
+如果某个房间将被转化为新手或重生区域，那个房间所在的区块里的房间都会有这样的消息：
 
 ![](https://docs.screeps.com/img/chrome_2017-03-08_13-01-20.png)
 
-You can use game constants `SYSTEM_USERNAME`, `SIGN_NOVICE_AREA`, and `SIGN_RESPAWN_AREA` to programmatically check the signs in the rooms that are important to you and reserve them if such a message detected.
+你可以使用游戏的环境变量`SYSTEM_USERNAME`、`SIGN_NOVICE_AREA`以及`SIGN_RESPAWN_AREA`来通过程序定期检查自己是否有重要的房间将被转化，如果有上图那样的消息你也可以通过程序来预定房间。
+
